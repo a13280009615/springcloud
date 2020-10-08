@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+spring:
+   application:
+       name: sprincloud-payment-service
+   datasource:
+     type: com.alibaba.druid.pool.DruidDataSource
+     url: jdbc:mysql://192.168.56.10:3306/payment?useUnicode=true&characterEncoding=utf-8&useSSL=false
+     username: root
+     password: root
+     driver-class-name: org.gjt.mm.mysql.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.zf.springcloud.bean
